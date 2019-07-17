@@ -24,8 +24,20 @@ git clone https://github.com/boyney123/songs-app.git
 
 There are two ways to get the application running.
 
-- Locally (outside of docker)
-- Using Docker
+- Using Docker (recommended)
+- Locally
+
+### Using Docker (Recommended)
+
+```
+docker-compose up -d
+```
+
+If you want to populate the database run:
+
+```
+docker-compose exec songs-api npm run populate-database
+```
 
 ### Locally
 
@@ -42,18 +54,6 @@ If you would like to populate the database run:
 ```sh
 # Run this inside the songs-api directory
 npm run populate-database
-```
-
-### Using Docker (Recommended)
-
-```
-docker-compose up -d
-```
-
-If you want to populate the database run:
-
-```
-docker-compose exec songs-api npm run populate-database
 ```
 
 ---
