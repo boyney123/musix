@@ -75,6 +75,8 @@ This application is split into three main parts:
 2. Song-Subscriber (Handle socket connections & shared data)
 3. Song-Client (Client application for users)
 
+<img alt="header" src="./images/architecture.png" />
+
 ## Songs-API
 
 The song api was written using Express & MongoDB.
