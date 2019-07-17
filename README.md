@@ -143,3 +143,4 @@ This is the web application built using:
 - useReducer/Redux seems overkill for this application, most can be done with local state in the Provider components, but for POC that was used.
 - Most components have been kept dumb, which does mean the Application holds the business logic. In theory you could scale some of this down to the components, but I wanted to keep them dumb/reuseable for now.
 - User can not click on the progress bar for now (song progress bar)
+- Songs are not stored/retrieved from network storage (dropbox, drive, s3) yet.
