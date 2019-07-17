@@ -33,11 +33,13 @@ There are two ways to get the application running.
 docker-compose build && docker-compose up -d
 ```
 
-If you want to populate the database run:
+Next populate the database
 
 ```
 docker-compose exec songs-api npm run populate-database
 ```
+
+Then go to http://localhost:4000 to see the application 🎉
 
 ### Locally
 
