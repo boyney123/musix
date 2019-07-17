@@ -16,7 +16,7 @@
 ## Getting Started
 
 ```
-git clone https://github.com/boyney123/songs-app.git
+git clone https://github.com/boyney123/musix.git
 ```
 
 ## Running the application
