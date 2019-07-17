@@ -1,0 +1,48 @@
+.AudioPlayer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  color: white;
+  z-index: 1;
+}
+
+.AudioPlayer__Banner {
+  height: 50px;
+  padding: 5px 10px;
+  width: 100%;
+  background: #2196f3;
+  text-align: right;
+  box-shadow: 0px -3px 5px #4b4a4a;
+}
+
+.AudioPlayer__Content {
+  background: #2c2c2c;
+  padding: 10px 10px;
+}
+
+.AudioPlayer__Controls {
+  margin-top: 10px;
+  i {
+    font-size: 25px;
+    margin: 0 10px;
+  }
+  i:nth-child(2) {
+    font-size: 30px;
+  }
+}
+
+.AudioPlayer__Times {
+  margin-top: 10px;
+  .AudioPlayer__ProgressBar {
+    display: inline-block;
+    width: 75%;
+    margin: 0 10px;
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+    &::-webkit-progress-value {
+      transition: width 0.5s ease;
+      background: #4a836a;
+    }
+  }
+}

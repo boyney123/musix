@@ -1,0 +1,30 @@
+{
+  "name": "songs-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "NODE_ENV=test MONGODB_URL=mongodb://localhost:27017/songs_test jest",
+    "test:watch": "jest --watchAll",
+    "eslint": "eslint .",
+    "populate-database": "node scripts/populate-database"
+  },
+  "dependencies": {
+    "child-process-promise": "^2.2.1",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^8.0.0",
+    "express": "~4.16.1",
+    "helmet": "^3.18.0",
+    "mongoose": "^5.6.2",
+    "music-metadata": "^4.2.0",
+    "winston": "3.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "jest": "^24.8.0",
+    "random-words": "^1.1.0",
+    "supertest": "^4.0.2"
+  }
+}

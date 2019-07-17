@@ -1,0 +1,20 @@
+version: "3.2"
+
+services:
+  songs-api:
+    image: "songs-api"
+    build: "."
+    ports:
+      - 3000:3000
+    environment:
+      - MONGODB_URL=mongodb://mongo:27017/songs
+    depends_on:
+      - mongo
+    command: /usr/local/wait-for-it.sh mongo:27017 -- npm start
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - ./data:/data/db

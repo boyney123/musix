@@ -1,0 +1,36 @@
+version: "3.2"
+
+services:
+  songs-api:
+    image: "songs-api"
+    build: "songs-api"
+    ports:
+      - 3000:3000
+    environment:
+      - MONGODB_URL=mongodb://mongo:27017/songs
+    depends_on:
+      - mongo
+    command: /usr/local/wait-for-it.sh mongo:27017 -- npm start
+  songs-subscriber:
+    image: "songs-subscriber"
+    build: "songs-subscriber"
+    ports:
+      - 5000:5000
+  songs-client:
+    image: "songs-client"
+    build: "songs-client"
+    ports:
+      - 4000:3000
+    environment:
+      - REACT_APP_SONGS_API=http://localhost:3000
+      - REACT_APP_SONGS_SUBSCRIBER_API=http://localhost:5000
+    depends_on:
+      - songs-api
+      - songs-subscriber
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - ./data:/data/db

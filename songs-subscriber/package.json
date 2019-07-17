@@ -1,0 +1,12 @@
+{
+  "name": "songs-subscriber",
+  "version": "0.0.1",
+  "description": "Websocket server to handle songs",
+  "scripts": {
+    "start": "node src/index"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^2.2.0"
+  }
+}
