@@ -5,9 +5,6 @@
 
   <hr />
 
-[![Travis](https://img.shields.io/travis/boyney123/songs-app/master.svg)](https://travis-ci.org/boyney123/songs-app)
-[![CodeCov](https://codecov.io/gh/boyney123/songs-app/branch/master/graph/badge.svg?token=AoXW3EFgMP)](https://codecov.io/gh/boyney123/songs-app)
-
 <img alt="header" src="./images/demo.png" />
 
 <h3>Features: Play songs, Navigate Songs, Get notfiyed when other people listen to your song, and more...</h3>
