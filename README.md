@@ -10,6 +10,8 @@
 
 <img alt="header" src="./images/demo.png" />
 
+<h3>Features: Play songs, Navigate Songs, Get notfiyed when other people listen to your song, and more...</h3>
+
 </div>
 
 <hr/>
