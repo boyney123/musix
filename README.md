@@ -60,6 +60,14 @@ If you would like to populate the database run:
 npm run populate-database
 ```
 
+## Using the application
+
+- You can select a song by clicking on it
+- Using the Audio Player controls you can navigate the songs
+- If you have other connections (other browsers) play the same songs, the clients will get notified
+  - To do this locally, just open up the app across multiple browsers and click on the same songs.
+- Pause the songs, clicking pause
+
 ---
 
 ## About this application
