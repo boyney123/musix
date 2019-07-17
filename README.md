@@ -1,6 +1,6 @@
 <div align="center">
 
-<h2>Song-App: Web application to play songs</h2>
+<h2>Musix: Web application to play songs</h2>
 <p>Song application built using MongoDB, Websockets, React & Bulma</>
 
   <hr />
