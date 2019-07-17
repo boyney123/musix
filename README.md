@@ -30,7 +30,7 @@ There are two ways to get the application running.
 ### Using Docker (Recommended)
 
 ```
-docker-compose up -d
+docker-compose build && docker-compose up -d
 ```
 
 If you want to populate the database run:
