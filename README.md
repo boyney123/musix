@@ -144,3 +144,4 @@ This is the web application built using:
 - User can not click on the progress bar for now (song progress bar)
 - Songs are not stored/retrieved from network storage (dropbox, drive, s3) yet.
 - All services are in this monorepo for now, in reality they would be seperated
+- You might get into some werid situations with the socket data (if you close the browser refresh etc.) I havent added any code to handle browser disconnects or anything yet. To clear the socket data you will have to restart the application at the moment.
