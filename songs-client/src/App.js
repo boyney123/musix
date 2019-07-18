@@ -26,7 +26,7 @@ export function App() {
   return (
     <>
       <NavBar />
-      {loading && <h4 aria-label="loader">Loading media...</h4>}
+      {loading && <div className="is-loading" aria-label="loader" />}
       {!loading && (
         <section className="section Main">
           <div className="container">
