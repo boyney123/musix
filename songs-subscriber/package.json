@@ -6,7 +6,7 @@
     "start": "node src/index"
   },
   "dependencies": {
-    "express": "^4.15.2",
+    "express": "^4.17.3",
     "socket.io": "^2.2.0"
   }
 }
