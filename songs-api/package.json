@@ -15,7 +15,7 @@
     "cors": "^2.8.5",
     "debug": "~2.6.9",
     "dotenv": "^8.0.0",
-    "express": "~4.16.1",
+    "express": "~4.17.3",
     "helmet": "^3.18.0",
     "mongoose": "^5.6.2",
     "music-metadata": "^4.2.0",
